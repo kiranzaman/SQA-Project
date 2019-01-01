@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Chrome Test14"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.711">
+  <properties />
+  
+  
+            <testcase name="InsertDataOnPage" time="10.711" classname="sqa.sqa.Sector" />
+      
+</testsuite>

@@ -5,7 +5,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.safari.SafariDriver;
@@ -20,21 +22,33 @@ public class BaseDriver {
 	@Parameters("browser")
 	@BeforeClass
 	public void setUp(String browser){
-		/*
+		
+		if(browser.equalsIgnoreCase("internetexplorer")){
+			System.out.println("Internet Explorer");
+			System.setProperty("webdriver.ie.driver", "resources/IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
+		}
+		
 		if(browser.equalsIgnoreCase("firefox")){
 			System.out.println("Firefox");
 			System.setProperty("webdriver.gecko.driver","C:\\SeleniumGecko\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			System.out.println("came after driver");
 		}
-		*/
+		
 		if(browser.equalsIgnoreCase("chrome")){
 			System.out.println("Chrome");
 			System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 
-		/*if(browser.equalsIgnoreCase("opera")){
+		if(browser.equalsIgnoreCase("edge")){
+			System.out.println("Edge");
+			System.setProperty("webdriver.edge.driver", "resources/MicrosoftWebDriver.exe");
+			driver = new EdgeDriver();
+		}
+		
+		if(browser.equalsIgnoreCase("opera")){
 			System.out.println("Opera");
 			System.setProperty("webdriver.opera.driver", "resources/operadriver.exe");
 			OperaOptions options = new OperaOptions();
@@ -44,12 +58,7 @@ public class BaseDriver {
 	
 			System.out.println("Came after opera");
 		
-		}*/
-//		if(browser.equalsIgnoreCase("safari")){
-//			System.out.println("Safari");
-//			System.setProperty("webdriver.safari.driver", "resources/SafariDriver.safariextension");
-//			driver = new SafariDriver();
-//		}
+		}
 		baseUrl = "http://localhost:52537/";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}

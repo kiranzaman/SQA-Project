@@ -1,23 +1,22 @@
 package sqa.sqa;
 
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
-public class Login extends BaseDriver {
-	
-	@Test
-	public void verifyHomePageTitle()
-	{
-		driver.get(baseUrl);
+public class Login {
+	public void login(WebDriver driver) throws InterruptedException {
 		System.out.println("Entering test");
-		String expectedTitle = "Login ABC";
-		String actualTitle = driver.getTitle();
-		System.out.println(expectedTitle);
-		System.out.println(actualTitle);
-		System.out.println("Not entered");
-		Assert.assertEquals(actualTitle,expectedTitle);
-		System.out.println("Exiting test");
+		WebElement user = driver.findElement(By.id("username"));
+		System.out.println("User: ");
+		System.out.println(user);
+		user.sendKeys("admin");
+		WebElement pwd = driver.findElement(By.id("password"));
+		pwd.sendKeys("123");
+		Thread.sleep(2000);
+		System.out.println("Values entered");
+		WebElement signin = driver.findElement(By.id("submit"));
+		signin.click();
+		Thread.sleep(50);
 	}
 }

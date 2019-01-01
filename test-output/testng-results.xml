@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel test runs" duration-ms="10092" started-at="2018-12-29T19:54:00Z" finished-at="2018-12-29T19:54:10Z">
+  <suite name="Parallel test runs" duration-ms="14202" started-at="2019-01-01T02:28:53Z" finished-at="2019-01-01T02:29:07Z">
     <groups>
     </groups>
-    <test name="Chrome Test" duration-ms="10092" started-at="2018-12-29T19:54:00Z" finished-at="2018-12-29T19:54:10Z">
-      <class name="sqa.sqa.LoginTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:sqa.sqa.LoginTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="5318" started-at="2018-12-29T19:54:00Z" finished-at="2018-12-29T19:54:05Z">
+    <test name="Chrome Test10" duration-ms="14202" started-at="2019-01-01T02:28:53Z" finished-at="2019-01-01T02:29:07Z">
+      <class name="sqa.sqa.CityNegative">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:sqa.sqa.CityNegative@604ed9f0]" name="setUp" is-config="true" duration-ms="3854" started-at="2019-01-01T02:28:53Z" finished-at="2019-01-01T02:28:57Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:sqa.sqa.LoginTest@3ffc5af1]" name="login" duration-ms="3645" started-at="2018-12-29T19:54:05Z" finished-at="2018-12-29T19:54:09Z">
+        <test-method status="PASS" signature="InsertDataOnPage()[pri:0, instance:sqa.sqa.CityNegative@604ed9f0]" name="InsertDataOnPage" duration-ms="9212" started-at="2019-01-01T02:28:57Z" finished-at="2019-01-01T02:29:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:sqa.sqa.LoginTest@3ffc5af1]" name="tearDown" is-config="true" duration-ms="1086" started-at="2018-12-29T19:54:09Z" finished-at="2018-12-29T19:54:10Z">
+        </test-method> <!-- InsertDataOnPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:sqa.sqa.CityNegative@604ed9f0]" name="tearDown" is-config="true" duration-ms="1114" started-at="2019-01-01T02:29:06Z" finished-at="2019-01-01T02:29:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- sqa.sqa.LoginTest -->
-    </test> <!-- Chrome Test -->
+      </class> <!-- sqa.sqa.CityNegative -->
+    </test> <!-- Chrome Test10 -->
   </suite> <!-- Parallel test runs -->
 </testng-results>

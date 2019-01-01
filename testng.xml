@@ -1,41 +1,282 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel test runs" parallel="tests" thread-count="2">
 
-	<!-- <test name="Firefox Test">
+	 <listeners>
+	 
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      
+  </listeners>
+	
+	<!-- 
+	
+	<test name="InternetExplorer Test1">
+	 <parameter name = "browser" value = "internetExplorer"/>
+		<classes>
+			<class name="sqa.sqa.ParallelTest"></class>
+		</classes>
+	</test>
+	
+	 <test name="Firefox Test1">
 	 <parameter name = "browser" value = "firefox"/>
+		<classes>
+			<class name="sqa.sqa.ParallelTest"></class>
+		</classes>
+	</test>
+	<test name="Chrome Test1">
+	 <parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.ParallelTest"></class>
+		</classes>
+	</test>
+	<test name="Edge Test1">
+	 <parameter name = "browser" value = "edge"/>
+		<classes>
+			<class name="sqa.sqa.ParallelTest"></class>
+		</classes>
+	</test>
+	<test name="Opera Test1">
+	 <parameter name = "browser" value = "opera"/>
 		<classes>
 			<class name="sqa.sqa.ParallelTest"></class>
 		</classes>
 	</test>
 	  -->
 	  <!--
-	<test name="Chrome Test">
+	<test name="Chrome Test2">
 	<parameter name = "browser" value = "chrome"/>
 		<classes>
-			<class name="sqa.sqa.Login"></class>
+			<class name="sqa.sqa.LoginTitle"></class>
 		</classes>
 	</test>
 	-->
-	<!-- 
- 	<test name="Opera Test">
-	<parameter name = "browser" value = "opera"/>
-		<classes>
-			<class name="sqa.sqa.ParallelTest"></class>
-		</classes>
-	</test>
-	 -->
+	
+	
 	 <!-- 
-	 <test name="Chrome Test">
+	 <test name="Chrome Test3">
 	<parameter name = "browser" value = "chrome"/>
 		<classes>
 			<class name="sqa.sqa.TagName"></class>
 		</classes>
 	</test>
 	 -->
-	<test name="Chrome Test">
+	  <!-- 
+	<test name="Chrome Test4">
 	<parameter name = "browser" value = "chrome"/>
 		<classes>
 			<class name="sqa.sqa.LoginTest"></class>
+		</classes>
+	</test>
+	 -->
+	 <!-- 
+	<test name="Chrome Test5">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.HomeTitle"></class>
+		</classes>
+	</test>
+	 -->
+
+	
+	<!-- <test name="Chrome Test6">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.ReportTest"></class>
+		</classes>
+	</test>
+	 -->
+	 <!-- 
+	<test name="Chrome Test7">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.InsertDataLabelsTest"></class>
+		</classes>
+	</test>
+	<test name="Firefox Test7">
+	<parameter name = "browser" value = "firefox"/>
+		<classes>
+			<class name="sqa.sqa.InsertDataLabelsTest"></class>
+		</classes>
+	</test>
+	<test name="Opera Test7">
+	<parameter name = "browser" value = "opera"/>
+		<classes>
+			<class name="sqa.sqa.InsertDataLabelsTest"></class>
+		</classes>
+	</test>
+	<test name="Edge Test7">
+	<parameter name = "browser" value = "edge"/>
+		<classes>
+			<class name="sqa.sqa.InsertDataLabelsTest"></class>
+		</classes>
+	</test>
+	
+	 -->
+	 
+	 <!-- 
+	 <test name="Edge Test8">
+	<parameter name = "browser" value = "edge"/>
+		<classes>
+			<class name="sqa.sqa.InsertData"></class>
+		</classes>
+	</test>
+	-->
+	<!-- 
+	<test name="Chrome Test8">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.InsertData"></class>
+		</classes>
+	</test>
+	
+	<test name="Edge Test8">
+	<parameter name = "browser" value = "edge"/>
+		<classes>
+			<class name="sqa.sqa.InsertData"></class>
+		</classes>
+	</test>
+	<test name="Firefox Test8">
+	<parameter name = "browser" value = "firefox"/>
+		<classes>
+			<class name="sqa.sqa.InsertData"></class>
+		</classes>
+	</test>
+	<test name="Opera Test8">
+	<parameter name = "browser" value = "opera"/>
+		<classes>
+			<class name="sqa.sqa.InsertData"></class>
+		</classes>
+	</test>
+	 -->
+	 <!-- 
+	<test name="Opera Test9">
+	<parameter name = "browser" value = "opera"/>
+		<classes>
+			<class name="sqa.sqa.MonthlyReport"></class>
+		</classes>
+	</test>
+	<test name="Chrome Test9">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.MonthlyReport"></class>
+		</classes>
+	</test>
+	
+	<test name="Firefox Test9">
+	<parameter name = "browser" value = "firefox"/>
+		<classes>
+			<class name="sqa.sqa.MonthlyReport"></class>
+		</classes>
+	</test>
+	
+	<test name="Edge Test9">
+	<parameter name = "browser" value = "edge"/>
+		<classes>
+			<class name="sqa.sqa.MonthlyReport"></class>
+		</classes>
+	</test>
+	
+	<test name="InternetExplorer Test9">
+	<parameter name = "browser" value = "ie"/>
+		<classes>
+			<class name="sqa.sqa.MonthlyReport"></class>
+		</classes>
+	</test>
+	-->
+	<!-- 
+	<test name="Chrome Test10">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.CityNegative"></class>
+		</classes>
+	</test>
+	
+	<test name="Firefox Test10">
+	<parameter name = "browser" value = "firefox"/>
+		<classes>
+			<class name="sqa.sqa.CityNegative"></class>
+		</classes>
+	</test>
+	<test name="Edge Test10">
+	<parameter name = "browser" value = "edge"/>
+		<classes>
+			<class name="sqa.sqa.CityNegative"></class>
+		</classes>
+	</test>
+	<test name="Internet Explorer Test10">
+	<parameter name = "browser" value = "ie"/>
+		<classes>
+			<class name="sqa.sqa.CityNegative"></class>
+		</classes>
+	</test>
+	<test name="Opera Test10">
+	<parameter name = "browser" value = "opera"/>
+		<classes>
+			<class name="sqa.sqa.CityNegative"></class>
+		</classes>
+	</test>
+	 -->
+	<!-- 
+	<test name="Chrome Test11">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.CompanyReport"></class>
+		</classes>
+	</test>
+	
+	<test name="Opera Test11">
+	<parameter name = "browser" value = "opera"/>
+		<classes>
+			<class name="sqa.sqa.CompanyReport"></class>
+		</classes>
+	</test>
+	<test name="Edge Test11">
+	<parameter name = "browser" value = "edge"/>
+		<classes>
+			<class name="sqa.sqa.CompanyReport"></class>
+		</classes>
+	</test>
+	
+	<test name="Internet Explorer Test11">
+	<parameter name = "browser" value = "ie"/>
+		<classes>
+			<class name="sqa.sqa.CompanyReport"></class>
+		</classes>
+	</test>
+	<test name="Firefox Test11">
+	<parameter name = "browser" value = "firefox"/>
+		<classes>
+			<class name="sqa.sqa.CompanyReport"></class>
+		</classes>
+	</test>
+	
+	 -->
+	<!--  
+	 <test name="Firefox Test12">
+	<parameter name = "browser" value = "firefox"/>
+		<classes>
+			<class name="sqa.sqa.LeadsourceReport"></class>
+		</classes>
+	</test>
+	 -->
+	 <!-- 
+	<test name="Chrome Test12">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.LeadsourceReport"></class>
+		</classes>
+	</test>
+	  -->
+	 <test name="Chrome Test13">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.RegionalReport"></class>
+		</classes>
+	</test>
+	 <test name="Chrome Test14">
+	<parameter name = "browser" value = "chrome"/>
+		<classes>
+			<class name="sqa.sqa.Sector"></class>
 		</classes>
 	</test>
 </suite>

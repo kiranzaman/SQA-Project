@@ -10,7 +10,7 @@ public class ParallelTest extends BaseDriver{
 	@Test
 	public void mytest1(){
 		driver.get(baseUrl);
-	    driver.findElement(By.linkText("Download")).click();
+	    driver.findElement(By.id("clear")).click();
 	    
 	}	
 

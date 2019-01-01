@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test runs]" parallel="tests">
-  <test thread-count="2" name="Chrome Test(failed)" parallel="tests">
+  <test thread-count="2" name="Chrome Test9(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="sqa.sqa.LoginTest">
+      <class name="sqa.sqa.MonthlyReport">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="login"/>
+          <include name="InsertDataOnPage"/>
         </methods>
-      </class> <!-- sqa.sqa.LoginTest -->
+      </class> <!-- sqa.sqa.MonthlyReport -->
     </classes>
-  </test> <!-- Chrome Test(failed) -->
+  </test> <!-- Chrome Test9(failed) -->
 </suite> <!-- Failed suite [Parallel test runs] -->
